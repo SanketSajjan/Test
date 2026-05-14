@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GrowGuru Rulebook</title>
+
+<style>
+
+:root{
+
+--bg:#f5f7fb;
+--card:#ffffff;
+
+--text:#1f2937;
+--muted:#6b7280;
+
+--line:#e5e7eb;
+
+--accent:#2563eb;
+--accent2:#16a34a;
+
+--radius:14px;
+
+}
+
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial;
+background:linear-gradient(180deg,#ffffff,#f5f7fb);
+color:var(--text);
+padding:40px 18px 60px;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+}
+
+.header{
+margin-bottom:24px;
+}
+
+.header h1{
+font-size:30px;
+margin:0;
+font-weight:700;
+}
+
+.header p{
+margin-top:8px;
+color:var(--muted);
+line-height:1.6;
+}
+
+.badge{
+display:inline-block;
+font-size:12px;
+padding:6px 10px;
+border-radius:20px;
+background:#eef2ff;
+color:#3730a3;
+margin-right:6px;
+margin-top:12px;
+}
+
+.card{
+
+background:var(--card);
+border:1px solid var(--line);
+border-radius:var(--radius);
+padding:22px 24px;
+margin-top:14px;
+
+box-shadow:0 6px 24px rgba(0,0,0,0.04);
+
+}
+
+.card h2{
+margin:0 0 10px 0;
+font-size:16px;
+font-weight:600;
+display:flex;
+gap:8px;
+align-items:center;
+}
+
+.card p{
+margin:8px 0;
+line-height:1.7;
+color:#374151;
+}
+
+ul{
+margin-top:8px;
+padding-left:18px;
+}
+
+li{
+margin:6px 0;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+th{
+text-align:left;
+font-weight:600;
+font-size:13px;
+padding:10px;
+border-bottom:1px solid var(--line);
+}
+
+td{
+padding:10px;
+font-size:13px;
+border-bottom:1px solid var(--line);
+}
+
+.tag{
+font-size:12px;
+padding:4px 8px;
+border-radius:12px;
+background:#f3f4f6;
+}
+
+.highlight{
+color:#16a34a;
+font-weight:600;
+}
+
+.rule{
+
+background:#f1f5f9;
+border-radius:10px;
+padding:12px 14px;
+margin-top:10px;
+font-size:13px;
+
+}
+
+.footer{
+
+text-align:center;
+margin-top:24px;
+font-size:12px;
+color:#9ca3af;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+
+<h1>📘 GrowGuru Dynamic Active Stocks</h1>
+
+<p>
+
+Systematic momentum strategy using F&O stocks with defensive allocation and regime based risk management.
+
+</p>
+
+<div>
+
+<span class="badge">80% Stocks</span>
+<span class="badge">20% Defensive</span>
+<span class="badge">Quarterly Rebalance</span>
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>🎯 Strategy Objective</h2>
+
+<p>
+
+Capture strong momentum stocks while maintaining a defensive buffer to reduce drawdowns during weak market phases.
+
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>🌐 Investment Universe</h2>
+
+<table>
+
+<tr>
+<th>Parameter</th>
+<th>Rule</th>
+</tr>
+
+<tr>
+<td>Universe</td>
+<td>F&O Stocks</td>
+</tr>
+
+<tr>
+<td>Approx Size</td>
+<td>~200 Stocks</td>
+</tr>
+
+<tr>
+<td>Reason</td>
+<td>Liquidity and institutional participation</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="card">
+
+<h2>🏗 Portfolio Structure</h2>
+
+<table>
+
+<tr>
+<th>Basket</th>
+<th>Allocation</th>
+</tr>
+
+<tr>
+<td>Equity Momentum Basket</td>
+<td class="highlight">80%</td>
+</tr>
+
+<tr>
+<td>Defensive Basket</td>
+<td class="highlight">20%</td>
+</tr>
+
+</table>
+
+<p>Defensive assets include Liquidcase and Goldcase.</p>
+
+</div>
+
+
+<div class="card">
+
+<h2>📈 Momentum Model</h2>
+
+<table>
+
+<tr>
+<th>Timeframe</th>
+<th>Weight</th>
+</tr>
+
+<tr>
+<td>1 Year Return</td>
+<td>50%</td>
+</tr>
+
+<tr>
+<td>6 Month Return</td>
+<td>30%</td>
+</tr>
+
+<tr>
+<td>3 Month Return</td>
+<td>20%</td>
+</tr>
+
+</table>
+
+<div class="rule">
+
+Momentum Score = (1Y × 50%) + (6M × 30%) + (3M × 20%)
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<h2>🏆 Stock Selection</h2>
+
+<ul>
+
+<li>Select top 10 stocks based on momentum score</li>
+
+<li>Allocate equally across selected stocks</li>
+
+<li>Equity allocation = 80% of portfolio</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>🔄 Rebalancing</h2>
+
+<p>
+
+Portfolio review frequency is quarterly.
+
+</p>
+
+<ul>
+
+<li>Recalculate momentum ranks</li>
+<li>Exit stocks below rank threshold</li>
+<li>Replace with next highest ranked stocks</li>
+
+</ul>
+
+</div>
+
+
+<div class="card">
+
+<h2>🚪 Exit Rule</h2>
+
+<table>
+
+<tr>
+<th>Condition</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<td>Rank ≤ 20</td>
+<td>Hold</td>
+</tr>
+
+<tr>
+<td>Rank > 20</td>
+<td>Exit and Replace</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="card">
+
+<h2>🛡 Regime Control</h2>
+
+<p>
+
+If market regime turns defensive, reduce equity exposure.
+
+</p>
+
+<table>
+
+<tr>
+<th>Asset</th>
+<th>Allocation</th>
+</tr>
+
+<tr>
+<td>Stocks</td>
+<td>40%</td>
+</tr>
+
+<tr>
+<td>Defensive Assets</td>
+<td>60%</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="card">
+
+<h2>🔁 Recovery Rule</h2>
+
+<p>
+
+When regime normalizes, revert back to the base allocation.
+
+</p>
+
+<table>
+
+<tr>
+<th>Asset</th>
+<th>Allocation</th>
+</tr>
+
+<tr>
+<td>Stocks</td>
+<td>80%</td>
+</tr>
+
+<tr>
+<td>Defensive Assets</td>
+<td>20%</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="footer">
+
+GrowGuru System Rulebook
+
+</div>
+
+</div>
+
+</body>
+</html>
