@@ -1,7 +1,9 @@
 fetch('data/output.json')
   .then(response => response.json())
   .then(data => {
-    document.getElementById("date").innerText = data.date;
+
+    document.getElementById("date").innerText =
+      data.date;
 
     let html = "";
 
@@ -10,4 +12,6 @@ fetch('data/output.json')
     });
 
     document.getElementById("stocks").innerHTML = html;
-  });
+
+  })
+  .catch(error => console.log(error));
