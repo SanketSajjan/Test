@@ -7,7 +7,7 @@ fetch('data/output.json')
 
     let html = "";
 
-    data.stocks.forEach(stock => {
+    data.topStocks.forEach(stock => {
       html += `<li>${stock}</li>`;
     });
 
